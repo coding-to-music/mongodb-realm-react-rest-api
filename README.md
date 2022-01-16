@@ -8,6 +8,20 @@ https://github.com/mongodb-developer/mongodb-realm-react-rest-api
 
 https://coding-to-music.github.io/mongodb-realm-react-rest-api/
 
+## to fix build problem
+
+"TypeError: MiniCssExtractPlugin is not a constructor"
+
+https://stackoverflow.com/questions/70715794/typeerror-minicssextractplugin-is-not-a-constructor
+
+https://github.com/facebook/create-react-app/issues/11930
+
+```java
+npm i -D --save-exact mini-css-extract-plugin@2.4.5
+
+rm -rf package-lock.json && rm -rf node_modules && npm cache clean --force && npm install
+```
+
 ### Associated blog post
 
 Please read this associated [blog post](https://www.mongodb.com/developer/how-to/react-query-rest-api-realm/) to get all the details about this project.
@@ -16,7 +30,7 @@ Please read this associated [blog post](https://www.mongodb.com/developer/how-to
 
 It's as simple as cloning this repository and then
 
-```
+```java
 npm start
 ```
 
@@ -85,9 +99,9 @@ npm i axios
 ```
 
 ## Checking the REST API
-As mentioned in the introduction, the REST API we are going to use in this blog post already exists and was created using MongoDB Realm so it can scale easily and automatically. This REST API exposes metadata from the COVID-19 Open Data Cluster that we made publicly available. Check out this blog post for all the details.
+As mentioned in the introduction, the REST API we are going to use in this blog post already exists and was created using MongoDB Realm so it can scale easily and automatically. This REST API exposes metadata from the [COVID-19 Open Data Cluster](https://www.mongodb.com/developer/article/johns-hopkins-university-covid-19-data-atlas/) that we made publicly available. Check out this blog post for all the details.
 
-This is the REST API we will use. You can open it in a new tab in your browser or use the curl command:
+[This is the REST API we will use](https://webhooks.mongodb-stitch.com/api/client/v2.0/app/covid-19-qppza/service/REST-API/incoming_webhook/metadata). You can open it in a new tab in your browser or use the curl command:
 
 ```java
 curl https://webhooks.mongodb-stitch.com/api/client/v2.0/app/covid-19-qppza/service/REST-API/incoming_webhook/metadata
@@ -109,7 +123,7 @@ The result from accessing this REST API is a JSON document that looks like this:
 }
 ```
 
-And it contains the list of countries that I want, which is the list of all the countries that exist in the Johns Hopkins University data set.
+And it contains the list of countries that I want, which is the list of all the countries that exist in the [Johns Hopkins University data set](https://github.com/CSSEGISandData/COVID-19).
 
 Now that we have everything we need to build our React website, let's code!
 

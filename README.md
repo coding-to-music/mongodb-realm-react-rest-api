@@ -6,6 +6,8 @@ https://www.mongodb.com/developer/how-to/react-query-rest-api-realm/
 
 https://github.com/mongodb-developer/mongodb-realm-react-rest-api
 
+https://coding-to-music.github.io/mongodb-realm-react-rest-api/
+
 ### Associated blog post
 
 Please read this associated [blog post](https://www.mongodb.com/developer/how-to/react-query-rest-api-realm/) to get all the details about this project.

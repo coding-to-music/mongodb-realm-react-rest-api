@@ -6,11 +6,11 @@ https://www.mongodb.com/developer/how-to/react-query-rest-api-realm/
 
 https://github.com/mongodb-developer/mongodb-realm-react-rest-api
 
-# Associated blog post
+### Associated blog post
 
 Please read this associated [blog post](https://www.mongodb.com/developer/how-to/react-query-rest-api-realm/) to get all the details about this project.
 
-# Start the Beast
+### Start the Beast
 
 It's as simple as cloning this repository and then
 
@@ -20,16 +20,16 @@ npm start
 
 The website will then be available at [http://localhost:3000/](http://localhost:3000/).
 
-# Author
+### Author
 
 Maxime Beugnet <maxime@mongodb.com>
 
-# Questions?
+### Questions?
 
 If you have any questions or comments, please create a topic in our [community forum](https://www.mongodb.com/community/forums/) and ping me: [@MaBeuLux88](https://www.mongodb.com/community/forums/u/mabeulux88/summary).
 
 
-Introduction
+## Introduction
 REST APIs and React are both very popular technologies in their respective fields and they are also very interesting to combine in a project.
 
 In this blog post, I will show you how we can use a REST API that I created with the help of MongoDB Realm to access my data in my MongoDB Atlas cluster and display the result of the query in a website built with React.
@@ -38,7 +38,7 @@ At the end of this tutorial, you will have a basic React project capable of retr
 
 In the next blog post, I will use this project as a starting point. The list of countries will become a filter for a bunch of charts built with MongoDB Charts that I will be able to import into a website using the MongoDB Charts SDK. The final result will be a COVID-19 dashboard which will be easy to filter by country.
 
-Prerequisites
+## Prerequisites
 To build this project, you will need a recent version of NodeJS.
 
 Please check that your versions of node, npm, and npx are close to my versions:
